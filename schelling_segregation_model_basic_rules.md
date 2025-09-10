@@ -1,0 +1,7 @@
+- A fixed pre-determined number of agents exist in the model.
+- Agents belong to one of two groups (1 or 2).
+- The agents live in a two-dimensional non-periodic grid.
+- Only one agent per position is allowed.
+- At each state of the simulation, each agent looks at its 8 neighboring positions (cardinal and diagonal directions). It then counts how many neighboring agents belong to the same group (if any). This leads to 8 neighboring positions per position (except at the edges of the grid).
+- If an agent has at least min_to_be_happy neighbors belonging to the same group, then it becomes happy.
+- Else, the agent is unhappy and moves to a new random location in space while respecting the 1-agent-per-position rule.
